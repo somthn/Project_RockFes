@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
+            html,
+            body 
+            {
+                height: 100%;
+                padding: 0;
+                margin: 0;
+                width: 100%;
+                display: flex;
+                -webkit-justify-content: center;
+                justify-content: center;
+                -webkit-align-items: center;
+                align-items: center;
+                background-color: #1BA39C;
+                font-family: 'Source Sans Pro', Arial;
+            }
+
+            .hover_effect 
+            {
+                -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+                display: block;
+                width: 100%;
+                padding: 1px;
+                position: relative;
+                z-index: 2;
+                text-decoration: none;
+                color: #2C3E50;
+                box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                -webkit-box-sizing: border-box;
+                font-size: 5em;
+                font-weight: 600;
+                -webkit-user-select: none;
+                -webkit-touch-callout: none;  
+            }
+
+            .hover_effect:after {
+                content: "";
+                height: 5px;
+                left: 0;
+                width: 1px;
+                position: absolute;
+                -webkit-transition: width 1s ease, background-color 1s ease;
+                -moz-transition: width 1s ease, background-color 1s ease;;
+                -ms-transition: width 1s ease, background-color 1s ease;;
+                -o-transition: width 1s ease, background-color 1s ease;;
+                transition: width 1s ease, background-color 1s ease;;
+                right: 0;
+                margin: 0 auto;
+                }
+
+            .hover_effect:hover {
+                color: rgb(67, 69, 202);
+                -webkit-transition: color 1s ease;
+                -moz-transition: color 1s ease;
+                -ms-transition: color 1s ease;
+                -o-transition: color 1s ease;
+                transition: color 1s ease;
+                cursor: pointer;
+            }
+
+            .hover_effect:hover:after, 
+            .hover_effect:focus:after{
+                width: 100%;
+                background-color: rgb(67, 69, 202);
+            }
+
+            .ua {
+                position: absolute;
+                right: 20px;
+                bottom: 20px;
+                color: #fff;
+                font-size: 2em;
+            }
+
+            .fa {
+                color: #2C3E50;
+                    -webkit-transition: all 1s ease;
+                -moz-transition: all 1s ease;
+                -ms-transition: all 1s ease;
+                -o-transition: all 1s ease;
+                transition: all 1s ease;
+            }
+
+            .ua:hover .fa {
+                color:#2C3E50;
+                -webkit-transform: scale(1.5);
+                -moz-transform: scale(1.5);
+                -ms-transform: scale(1.5);
+                -o-transform: scale(1.5);
+                transform: scale(1.5);
+                -webkit-transition: all 1s ease;
+                -moz-transition: all 1s ease;
+                -ms-transition: all 1s ease;
+                -o-transition: all 1s ease;
+                transition: all 1s ease;
+            }
+
+            .anchor {
+                position: absolute;
+                text-align: center;
+                top: 5px;
+                right: 20px;
+            }
+
+            .anchor a {
+                color: #fff;
+                text-decoration: none;
+            }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="container">
+          <p class="main-paragraph hover_effect">Hover me!</p>
+          <p class="anchor">
+          </p>
+        </div>
+    </main>
+      <i class="fa fa-user"></i></a>
+</body>
+</html>

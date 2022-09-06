@@ -1,0 +1,98 @@
+
+
+/* 초기화 */
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    color: inherit;
+    font-family: 'LeferiPoint-WhiteObliqueA';
+}
+
+@font-face 
+{
+    font-family: 'LeferiPoint-WhiteObliqueA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/LeferiPoint-WhiteObliqueA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html 
+{
+    scroll-behavior: smooth;
+}
+
+/* div
+{
+    overflow: hidden;
+} */
+
+
+.container
+{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+/* Coummunity */
+    /*Gallery*/
+    .Gallery-img-box
+    {   
+        top: 0%;
+        width: 100%;
+        margin-top: 40px;
+    }
+    
+    #img1,#img2,#img3,#img4,#img5,#img6,#img7,#img8,#img9
+    {
+        margin: 5px;
+    }
+    
+    #img1:hover,#img2:hover,#img3:hover,#img4:hover,#img5:hover,#img6:hover,#img7:hover,#img8:hover,#img9:hover
+    {
+        cursor: zoom-in;
+        opacity: 0.8;
+        transition: 0.2s;
+    }
+    
+    /* modal (Gallery, Line-up)*/
+    .modal-overlay 
+    {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    } 
+ 
+
+ /* Modal Content/Box */
+.modal-window 
+{
+    margin: 10% auto; /* 15% from the top and centered */
+    padding: 20px;
+    width: 50%; /* Could be more or less, depending on screen size */
+}
+/* The Close Button */
+.close 
+{
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.close:hover,
+.close:focus 
+{
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}

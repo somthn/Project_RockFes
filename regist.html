@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="#">
+        <input class="inputbox" name="email" placeholder=" 이메일을 입력하세요." required>
+        <button type="button" class="email-submit" onclick="clickFunc();">전송</button>
+    </form>
+    <script>
+        document.getElementsByClassName('email').addEventListener('click', clickFunc)
+            function clickFunc(){
+                let email = document.getElementsByName("email")[0].value;
+                    if(email===""){
+                        alert('이메일을 입력해주세요.');
+                    } else {
+                        alert('이메일 입력이 완료되었습니다. 창원 락 페스티벌의 소식을 받아보실 수 있습니다.');
+                    }
+                }
+    </script>
+</body>
+</html>

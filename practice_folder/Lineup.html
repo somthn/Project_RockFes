@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+    <p>Click on the buttons inside the tabbed menu:</p>
+<div class="container">
+    <div id="Introduce" class="tabcontent">
+        <h1>Introduce</h1>
+        <p>London is the capital city of England.</p>
+    </div>
+
+    <div id="Line-Up" class="tabcontent">
+        <h1>Line-Up</h1>
+        <p>Paris is the capital of France.</p> 
+    </div>
+    <p></p>
+    <div id="Buy-Ticket" class="tabcontent">
+        <h1>Buy Ticket</h1>
+        <p>Tokyo is the capital of Japan.</p>
+    </div>
+
+    <div id="Location" class="tabcontent">
+        <h1>Location</h1>
+        <p>Oslo is the capital of Norway.</p>
+    </div>
+
+    <div id="Sponsor" class="tabcontent">
+        <h1>Sponsor</h1>
+        <p>Oslo is the capital of Norway.</p>
+    </div>
+
+    <button class="tablink" onclick="openCity('Introduce', this, 'rgb(106, 71, 172)')" id="defaultOpen">Introduce</button>
+    <button class="tablink" onclick="openCity('Line-Up', this, 'rgb(154, 89, 214)')">Line-Up</button>
+    <button class="tablink" onclick="openCity('Buy-Ticket', this, 'rgb(106, 71, 172)')">Buy Ticket</button>
+    <button class="tablink" onclick="openCity('Location', this, 'rgb(154, 89, 214)')">Location</button>
+    <button class="tablink" onclick="openCity('Sponsor', this, 'rgb(106, 71, 172)')">Sponsor</button>
+</div>
+<script src="Lineup.js"></script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .photobanner > img
+        {
+            max-height: 300px;
+        }
+
+        .photobanner
+        { 
+            width: 3550px;
+            margin-bottom: 80px;
+        }
+
+        /*keyframe animations*/
+        .first 
+        {
+            -webkit-animation: bannermove 40s linear infinite;
+            -moz-animation: bannermove 40s linear infinite;
+            -ms-animation: bannermove 40s linear infinite;
+            -o-animation: bannermove 40s linear infinite;
+            animation: bannermove 40s linear infinite;
+        }
+
+        @keyframes bannermove {
+            0% {
+                margin-left: 0px;
+            }
+            100% {
+                margin-left: -1250px;
+            }
+        }
+
+        @-webkit-keyframes bannermove {
+            0% {
+                margin-left: 0px;
+            }
+            100% {
+                margin-left: -1250px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+ 
+    
+        <!-- Each image is 200px by 200px -->
+        <div class="photobanner">
+            <img class="first" src="../img/space.jpg" alt="" />
+            <img src="../img/Line-up/the volunteers.jpg" alt="" />
+            <img src="../img/Line-up/jaurim.jpg" alt="" />
+            <img src="../img/Line-up/Day6.jpg" alt="" />
+            <img src="../img/Line-up/BIBI.jpg" alt="" />
+        </div>
+    </div>
+</body>
+</html>

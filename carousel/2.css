@@ -1,0 +1,98 @@
+@import url('https://fonts.goofleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400&display=swap');
+
+*
+{
+	margin: 0;
+}
+
+body
+{
+	font-family: 'Roboto', sans-serif;
+}
+
+#slider
+{
+	height: 500px;
+	border: 1px solid black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container
+{
+	width: 1600px;
+	margin: auto;
+}
+
+.subcontainer
+{
+	width: 85%;
+	margin: auto;
+}
+
+.slide-img
+{
+	width: 100%;
+	height: 274px;
+	border-radius: 5px;
+	background-position: center;
+	background-size: cover;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: 0.5s;
+}
+
+.slide-img:hover
+{
+	box-shadow: 0 0 0 200px rgba(0, 0, 0, 0.9) inset;
+}
+
+.slide-img a
+{
+	opacity: 0;
+	text-decoration: none;
+	transform: scale(0);
+	transition: 0.8s;
+	color: white;
+}
+
+.slide-img:hover
+{
+	opacity: 1;
+	transform: scale(1);
+}
+
+.img-1
+{
+	background-image: url(../img/fox.jpg);
+}
+
+.img-2
+{
+	background-image: url(../img/flower.jpg);
+}
+
+.img-3
+{
+	background-image: url(../img/moon.jpg);
+}
+
+.img-4
+{
+	background-image: url(../img/nature.jpg);
+}
+
+.img-5
+{
+	background-image: url(../img/lightning.jpg);
+}
+
+@media(max-width:1600px){
+	.container 
+	{
+		width: 100%; 
+	}
+}

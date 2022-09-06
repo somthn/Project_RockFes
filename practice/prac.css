@@ -1,0 +1,179 @@
+*
+{
+    text-decoration: none;
+    box-sizing: border-box;
+}
+p
+{
+    margin: 0;
+}
+
+h1
+{
+    font-size: 4rem;
+}
+
+@media (max-width: 600px) {
+    h1
+    {
+        font-size: 20px;
+    }
+}
+.container
+{
+    width: 100%;
+    margin: 30px auto;
+}
+.Mynav
+{
+    width: 65%;
+    margin: 0 auto;
+}
+.Mynav > .line
+{
+    display: inline-block;
+    margin-bottom: 20px;
+    background-color: #ff871c;
+    display: inline;
+    text-align: center;
+    padding: 0 200px;
+    height: 2px;
+    box-sizing: border-box;
+}
+.Mynav > a
+{
+    display: inline-block;
+    color: black;
+    font-size: 20px;
+    font-weight: 300;
+    margin-right: 100px;
+    padding-top: 50px;
+}
+.like_box
+{
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+.like_box >.like_list
+{
+    display: flex;
+}
+.like_box > .like_list > .book_info
+{
+    width: 400px;
+    height: 500px;
+    margin: 100px 30px;
+    display: block;
+    position: relative;
+    border-style: solid;
+    border-width: 1px;
+    border-color: gray;
+    
+}
+.like_box >.like_list > .book_info > .favi
+{
+    position: absolute;
+    top:-50px;
+    right:50%;
+    transform:translateX(50%);
+    background-color: white;
+    padding: 0 40px;
+    font-size: 80px;
+    color: #ff871c;
+}
+.like_box > .like_list > .book_info > .main_info
+{
+    width: 90%;
+    margin: 0 auto;
+    justify-content: center;
+    text-align: center;
+    padding-top: 17%;
+    vertical-align: middle;
+    position: relative;
+}
+.like_box > .like_list > .book_info > .favi
+{
+    cursor: pointer;
+}
+.like_box > .like_list > .book_info > .main_info >  .info_box > .book_info_text >h3
+{
+    line-height: 27px;
+}
+
+.like_box > .like_list > .book_info > .main_info >  .info_box >  p > a
+{
+    color: rgb(250, 114, 3);
+    font-weight: bold;
+}
+.like_box > .like_list > .book_info > .main_info > .info_box > p > a:hover
+{
+    text-decoration: underline;
+}
+.like_box > .like_list > .book_info > .main_info > .info_box > .check_box
+{
+    width: 100%;
+    height: 50px;
+    position:absolute;
+    bottom:-150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid gray;
+    font-weight: 700;
+    font-size: 18px;
+}
+.container > form
+{
+    width: 100%;
+    margin: 80px auto;
+    position: relative;
+}
+
+.container > form > .bu1 
+{
+   margin : 0 auto;
+   
+}
+
+.container > form > .bu1 > .button 
+{
+   width : 60%;/**/
+   margin : 0 auto;
+   display: flex;
+   
+   /*justify-content : space-between;*/
+}
+.container > form > .bu1 > .button > input
+{
+    height: 50px;
+    width: 30%; /**/
+    margin: 0 auto;
+    background-color: #ff871c;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    font-size: 17px;
+    border-radius: 2px;
+    border-style: none;
+    box-shadow: 2px 2px 2px rgba(128, 128, 128, 0.329);
+    display: inline-block;
+    transition: all .3s ease;
+}
+.container > form > .bu1 > .button > input:hover
+{
+    text-decoration: underline;
+    background-color: #ff861ccc;
+}
+.col-md-4
+{
+    width: 33.33333333%;
+    float: left;
+    
+}
+.col-md-4, col-sm-6
+{
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
